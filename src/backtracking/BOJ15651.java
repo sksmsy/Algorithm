@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * n과m(3)
+ */
+
 public class BOJ15651 {
 	static int n,m;
 	static StringBuilder sb = new StringBuilder();
