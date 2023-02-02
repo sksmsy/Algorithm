@@ -14,7 +14,6 @@ public class BOJ4796 {
 		int l, p, v;
 		StringBuilder sb = new StringBuilder();
 		
-		
 		StringTokenizer st;
 		int i = 1;
 		while(true) {
