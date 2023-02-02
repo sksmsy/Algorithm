@@ -31,7 +31,6 @@ public class BOJ4796 {
 			sb.append("Case "+i+": "+res+"\n");
 			i++;
 		}
-		
 		System.out.println(sb);
 	}
 }
