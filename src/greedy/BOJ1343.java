@@ -9,32 +9,49 @@ public class BOJ1343 {
 		
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		StringBuilder sb = new StringBuilder();
 		String b = br.readLine();
 
-		String result = "";
 		int cnt = 0;
 		for (int i = 0; i < b.length(); i++) {
 			
-			char c = b.charAt(i);
-			
-			if(c == 'X') {
+			if(b.charAt(i) == 'X') {
 				cnt++;
-				if(cnt == 4) {
-					result+="AAAA";
-					cnt = 0;
-				}
 			}else {
-				if(cnt == 2 || i == b.length()-1) {
-					result +="BB";
-				}else if(cnt == 3) {
-					result = "-1";
-					break;
+				if(cnt % 2!=0) {
+					System.out.println(-1);
+					return;
+				}else {
+					int k = cnt / 4;
+					
+					for (int j = 0; j < k; j++) {
+						sb.append("AAAA");
+					}
+					if(cnt % 4 != 0) {
+						sb.append("BB");
+					}
+					
+					sb.append(".");
+					cnt = 0;
 				}
 			}
 			
 		}
+		if(cnt % 2 !=0) {
+			System.out.println(-1);
+			return;
+		}else {
+			int k = cnt / 4;
+			
+			for (int j = 0; j < k; j++) {
+				sb.append("AAAA");
+			}
+			if(cnt % 4 != 0) {
+				sb.append("BB");
+			}
+			cnt = 0;
+		}
 		
-		System.out.println(result);
+		System.out.println(sb);
 	}
 }
