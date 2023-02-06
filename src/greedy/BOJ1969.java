@@ -35,17 +35,16 @@ public class BOJ1969 {
 					chCnt[0] ++;
 				}else if(arr[j][i] == 'C') {
 					chCnt[1] ++;
-				}else if(arr[j][i] == 'C') {
+				}else if(arr[j][i] == 'G') {
 					chCnt[2] ++;
 				}else {
 					chCnt[3] ++;
 				}
 				
+			}
+			
+			for (int j = 0; j < chCnt.length; j++) {
 				
-				
-				for (int k = 0; k < chCnt.length; k++) {
-					
-				}
 			}
 		}
 		
