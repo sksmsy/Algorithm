@@ -48,7 +48,7 @@ public class BOJ1260 {
 		visit[start] = true;
 		sb.append(start + " ");
 		
-		for (int i = start; i <=n; i++) {
+		for (int i = 0; i <=n; i++) {
 			if(arr[start][i] == 1 && !visit[i]) {
 				dfs(i);
 			}
