@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/*
+ * 비트마스킹 기본 
+ * 
+ */
 public class BOJ25166 {
 
 	public static void main(String[] args) throws IOException{
