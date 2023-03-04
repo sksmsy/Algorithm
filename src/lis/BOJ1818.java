@@ -5,53 +5,56 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ18353 {
+public class BOJ1818 {
 
-	static int n, arr[], lis[], max;
-
-	public static void main(String[] args) throws IOException {
-
+	static int n, max, arr[],lis[];
+	public static void main(String[] args) throws IOException{
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
 		n = Integer.parseInt(br.readLine());
+		
 		arr = new int[n];
 		lis = new int[n];
-		max = 0;
-
+		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for (int i = 0; i < n; i++) {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
-
+		
+		
 		lis[0] = arr[0];
-
+		max = 0;
 		for (int i = 1; i < n; i++) {
-			if (lis[max] > arr[i]) {
+			
+			if(lis[max] < arr[i]) {
 				lis[++max] = arr[i];
-			} else {
-				bs(arr[i]);
+			}else {
+				fn(arr[i]);
 			}
 		}
-		System.out.println(n - max-1);
+		System.out.println(n - (max+1));
 	}
 	
-	public static void bs(int key) {
+	public static void fn(int key) {
 		int start = 0;
 		int end = max;
-
-		while (start <= end) {
-			int mid = (start + end) / 2;
+		
+		while(start <= end) {
+			int mid = (start + end ) /2;
 			
-			if(key < lis[mid]) {
+			
+			if(lis[mid] < key) {
 				start = mid + 1;
 			}else {
-				if(key == lis[mid]) {
-					lis[mid] = key;
+				if(lis[mid] == key) {
+					
 					return;
 				}
-				end = mid - 1;
+				end = mid -1;
 			}
 		}
 		lis[start] = key;
-
+		
 	}
 }
