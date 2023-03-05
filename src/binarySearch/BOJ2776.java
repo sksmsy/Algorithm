@@ -1,8 +1,7 @@
-package lis;
+package binarySearch;
 
-public class BOJ12014 {
-	
-	
+public class BOJ2776 {
+
 	public static void main(String[] args) {
 		
 	}
