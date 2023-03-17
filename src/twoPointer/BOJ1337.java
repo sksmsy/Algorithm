@@ -33,7 +33,7 @@ public class BOJ1337 {
 				}
 			}
 		}
-		
+		//
 		Arrays.sort(arr);
 		System.out.println(arr[0]);
 		
