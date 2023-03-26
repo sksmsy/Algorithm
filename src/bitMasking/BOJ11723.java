@@ -22,7 +22,6 @@ public class BOJ11723 {
 	            k += 1 << i;
 	        }
 	        int s = 1 << 20;
-
 	        while (N-- > 0) {
 	            st = new StringTokenizer(br.readLine());
 

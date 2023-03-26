@@ -24,6 +24,7 @@ public class BOJ25166 {
 		}else {
 			int need = s - 1023;
 			if((need&m) == need) {
+
 				System.out.println("Thanks");
 			}else {
 				System.out.println("Impossible");
