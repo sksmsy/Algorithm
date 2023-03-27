@@ -24,8 +24,8 @@ public class BOJ12738 {
 		
 		max = 0;
 		lis[0] = arr[0];
-		
 		for (int i = 1; i < n; i++) {
+			
 			
 			if(lis[max] < arr[i]) {
 				lis[++max] = arr[i];
