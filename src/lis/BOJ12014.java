@@ -39,7 +39,7 @@ public class BOJ12014 {
 					fn(arr[i]);
 				}
 			}
-			
+			 
 			sb.append("Case #").append(tc).append("\n");
 			if(max+1 >= k) {
 				sb.append(1);
