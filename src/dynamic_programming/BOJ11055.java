@@ -22,6 +22,7 @@ public class BOJ11055 {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
 		
+		
 		dp[0] = arr[0];
 		max = dp[0];
 		for (int i = 1; i < n; i++) {
