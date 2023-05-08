@@ -51,7 +51,11 @@ public class 공원산책 {
 				tx-=len;
 			}
 			
-			if(tx >= 0 && ty >= 0 && tx < map.length && ty < map[0].length &&!("X".equals(map[tx][ty]))) {
+			if(tx >= 0 && ty >= 0 && tx < map.length && ty < map[0].length) {
+				for (int j = 1; j <=len; j++) {
+					
+				}
+				
 				x = tx;
 				y = ty;
 			}else {
