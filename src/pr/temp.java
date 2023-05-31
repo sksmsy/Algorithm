@@ -6,7 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
-
+/*
+ * 
+ * 
+ * 1. date format
+ * 2. 전부 day로 합산해서
+ * 3. 
+ * 
+ */
 public class temp {
 	public static void main(String[] args) {
 		String today = "2022.05.19";
@@ -102,6 +109,9 @@ public class temp {
       for(int i=0; i<list.size(); i++){
           System.out.print(answer[i] + " ");
         }
+      List<Map<String, Integer>> lm = new ArrayList<Map<String,Integer>>();
 	return 0;
     }
+    
+    
 }
