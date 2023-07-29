@@ -87,7 +87,6 @@ public class BOJ1303 {
 				}
 			}
 		}
-		
 		if(typ == 'W') {
 			w += (cnt*cnt);
 		}else {
